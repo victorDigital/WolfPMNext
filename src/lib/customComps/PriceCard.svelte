@@ -14,13 +14,15 @@
 	};
 </script>
 
-<Card.Root class="pointer-events-none select-none border-black p-0 shadow-none ">
+<Card.Root
+	class="page-break-after pointer-events-none invisible select-none border-black p-0 shadow-none print:visible"
+>
 	<Card.Header class="p-2">
 		<div class="flex flex-row items-start justify-start">
 			<div class="size-16">
-				<img src="/image.png" alt="" />
+				<img src="/image.png" alt="" class="max-h-16" />
 			</div>
-			<div>
+			<div class="ml-2 w-72">
 				<Card.Title>{product.value}</Card.Title>
 				<Card.Description class="font-mono text-xs">{product.sku}</Card.Description>
 			</div>
