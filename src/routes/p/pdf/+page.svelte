@@ -42,7 +42,9 @@
 			{/each}
 		</div>
 		<br />
-		<p>Pris skilte blev genereret af PricePress som er udviklet af Victor Østergaard Nielsen</p>
+		<p class="invisible font-mono text-xs opacity-30 print:visible">
+			Pris skilte blev genereret af PricePress som er udviklet af Victor Østergaard Nielsen
+		</p>
 	{/each}
 {:else}
 	<p>Loading...</p>
