@@ -2,6 +2,9 @@
 	import Nav from '$lib/customComps/Nav.svelte';
 	import { Toaster } from '$lib/components/ui/sonner';
 	import '../app.pcss';
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+
+	injectSpeedInsights();
 </script>
 
 <Toaster />
