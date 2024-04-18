@@ -12,6 +12,16 @@
 			return;
 		}
 	};
+
+	const style = `
+<style>
+	.screen-reader-text {
+		display: none;
+	}
+</style>
+`;
+
+	// console.log(product);
 </script>
 
 <Card.Root
@@ -35,8 +45,10 @@
 	</Card.Content>
 	<Card.Footer class="px-2 pb-2 pt-0">
 		<div class="flex w-full items-end justify-between">
-			<div class="size-10 overflow-hidden grayscale filter">
-				{@html product.thumb_html}
+			<div
+				class="group size-10 overflow-hidden grayscale filter group-has-[screen-reader-text]:hidden"
+			>
+				{@html product.thumb_html + style}
 			</div>
 			<div class="flex items-center">
 				<p class="w-20 text-right text-xs">Scan Qr-koden for mere infomation:</p>
